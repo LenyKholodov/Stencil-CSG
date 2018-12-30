@@ -1,0 +1,10 @@
+A = sphere (16):color (1,0,0)
+B = cylinder (8,40):translate (0,-16,0):color(0,0,1)
+C = cylinder (8,40):rotate (90,0,0,1):translate (17,0,0):color (0,1,0)
+D = cylinder (8,40):rotate (90,1,0,0):translate (0,0,-17):color (1,0,1)
+E = cone (17,18):color (1,1,0)
+F = box (32,20,32):translate(0,-11,0):color (1,0,0.5)
+G = cone (16,40):rotate (180,0,0,1):color (0,1,0)
+H = sphere (25):translate (0,-30,0):color (1,0,0)
+
+return E * (A - B - C - D) + (F - G - H)
